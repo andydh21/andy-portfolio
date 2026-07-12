@@ -1,0 +1,34 @@
+#menu-link, #project-link, #resume-link, #about-link, #contact-link, #about-link, #LinkedIn-link {
+    text-decoration: none;
+    color: #000; 
+}
+  
+#menu-link:hover, #project-link:hover, #resume-link:hover, #about-link:hover, #contact-link:hover, #LinkedIn-link:hover {
+    color: #26c9a1; 
+    cursor: pointer;
+}
+  
+.menu-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+.menu-container p {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center; 
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.menu-container a {
+    text-decoration: none; 
+    color: #000; 
+}
+
+.menu-container a:hover {
+    transform: translateY(-2px); 
+    transition: all 0.3s ease; 
+}

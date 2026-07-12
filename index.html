@@ -1,0 +1,143 @@
+<!doctype html>
+<html id = "port-page" lang="en">
+
+  <head>
+    <script>
+      if (localStorage.getItem('theme') === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+          document.body.classList.add('dark-mode');
+      }
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="author" content="Andy Hoang">
+    <meta name="description" content="Andy Hoang's Portfolio page">
+
+    <link rel="stylesheet" href="styling_page/dividers.css">
+    <link rel="stylesheet" href="styling_page/styles.css">
+    <link rel="stylesheet" href="styling_page/nav.css">
+
+    <title>My Portfolio</title>
+  </head>
+  
+  <body id = "body">
+
+    <header id="portfolio-header">
+      <button id="dark-mode-toggle" style="cursor: pointer; padding: 5px 10px; border-radius: 8px; font-weight: bold;">🌙 Dark Mode</button>
+
+      <h1 id="port-title">Welcome To My Portfolio</h1>
+    
+      <div class="container">
+        <app-header>
+          <nav>
+            <div class="menu-container">
+
+              <p id = "Home" class="active">Home</p>
+              
+              <a href="nav_bar/projects.html" id="project-link">
+                <p id = "Project">Project</p>
+              </a>
+
+              <a href = "nav_bar/about.html" id = "about-link">
+                <p id = "About">About</p>
+              </a>
+
+              <a href = "nav_bar/resume.html" id = "resume-link">
+                <p id = "Resume">Resume</p>
+              </a>
+              
+              <a href = "nav_bar/contact.html" id = "contact-link">
+                <p id = "Contact">Contact</p>
+              </a>
+
+              <a href = "https://www.linkedin.com/in/andydh041/" id = "LinkedIn-link">
+                <p id = "LinkedIn">LinkedIn</p>
+              </a>
+
+            </div>
+          </nav>
+        </app-header>
+      </div>
+    
+      <hr id="first-divider">
+    </header>
+
+    <!-- Author Profile Pic & Bio -->
+    <main>
+      <section id="author-intro">
+        <div id="author-description">
+          <div style="text-align: center; display: flex; justify-content: center;">
+            <div id="author-pic-frame">
+              <img id="author-pic" src="pictures/profile-pic.jpg" alt="Self picture of myself">
+            </div>
+          </div>
+          
+          <p id="author-bio">
+            Hello! I'm Andy Hoang, a Software Engineering graduate from the University of California, Irvine, with a passion for both software development and comprehensive IT systems. 
+            My background ranges from building e-commerce platforms from the ground up to managing data architectures. 
+            My technical toolkit includes Java, JavaScript, Python, C++, and robust database management with SQL, MySQL, and MongoDB. 
+            Alongside my programming expertise, I am currently pursuing my CompTIA A+ certification to solidify my foundation in hardware and systems troubleshooting. 
+            As an enthusiastic critical thinker and problem solver, I am eager to bring my diverse skill set to a dynamic business to optimize systems and build impactful solutions.
+          </p>
+        </div>
+      </section>
+
+      <section id = "My-skills">
+        <h1 id = "skill-header">Tech Stack</h1>
+        <div id = "logo-container">
+          
+          <a href="https://docs.oracle.com/javase/tutorial/index.html" target="_blank">
+            <img id="java-logo" src="pictures/java-logo.png" alt="Java logo">
+          </a>
+          <a href="https://docs.python.org/3/library/index.html" target="_blank">
+            <img id="python-logo" src="pictures/Python.svg.png" alt="python logo">
+          </a>
+          <a href="https://en.cppreference.com/w/cpp/standard_library" target="_blank">
+            <img id="cpp-logo" src="pictures/C++-Logo.wine.png" alt="C++ logo">
+          </a>
+          
+          <!-- Front-End & Design -->
+          <a href="https://devdocs.io/javascript/" target="_blank">
+            <img id="js-logo" src="pictures/JavaScript-logo.png" alt="JS-logo">
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+            <img id="html-logo" src="pictures/htmlLogo.png" alt="HTML logo">
+          </a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+            <img id="css-logo" src="pictures/cssLogo.webp" alt="CSS logo">
+          </a>
+          <a href="https://help.figma.com/hc/en-us/categories/360002051613-Get-started" target="_blank">
+            <img id="figma-logo" src="pictures/figma-logo.png" alt="Figma logo">
+          </a>
+          
+          <!-- Databases -->
+          <a href="https://dev.mysql.com/doc/" target="_blank">
+            <img id="MySql-logo" src="pictures/mysql-logo.svg" alt="MySql logo">
+          </a>
+          <a href="https://www.mongodb.com/docs/" target="_blank">
+            <img id="mongodb-logo" src="pictures/mongodb-logo.png" alt="MongoDb logo">
+          </a>
+          
+          <!-- Infrastructure & Tools -->
+          <a href="https://learning.postman.com/" target="_blank">
+            <img id="postman-logo" src="pictures/postman-logo.png" alt="Postman logo">
+          </a>
+          <a href="https://tomcat.apache.org/tomcat-9.0-doc/index.html" target="_blank">
+            <img id="apachetomcat-logo" src="pictures/apachetomcat-logo.png" alt="ApacheTomcat logo">
+          </a>
+          <a href="https://maven.apache.org/guides/index.html" target="_blank">
+            <img id="maven-logo" src="pictures/maven-logo.png" alt="Maven logo">
+          </a>
+          <a href="https://git-scm.com/docs" target="_blank">
+            <img id="git-logo" src="pictures/git-logo.png" alt="Git logo">
+          </a>
+          <a href="https://docs.github.com/en" target="_blank">
+            <img id="GitHub-logo" src="pictures/GitHub-logo.png" alt="GitHub logo">
+          </a>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+  
+</html>

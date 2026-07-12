@@ -1,0 +1,62 @@
+#about-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left; 
+    max-width: 800px;    
+    margin: 0 auto;      
+}
+
+#pickleball-pic{
+    width: 530px;
+    height: 510px;
+    object-fit: cover;
+    border: 2px solid #000000;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin-top: 25px;
+    margin-left: 0; 
+    margin-bottom: 75px;
+    object-position: center 48%;
+}
+
+#about-bio {
+    margin-left: 100px; 
+    margin-right: 100px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Callibri', Arial, sans-serif;
+    
+    margin-top: 0px; 
+    
+    margin-bottom: 30px;
+    text-align: left;
+    color:rgb(63, 63, 63);
+}
+
+#about-description h1, 
+#about-description h2 {
+    align-self: flex-start; 
+    margin-left: 100px;     
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: 'Callibri', Arial, sans-serif;
+    font-weight: bold;
+}
+
+body.dark-mode {
+    background-color: #121212; 
+}
+
+body.dark-mode #about-bio {
+    color: #b6d3f8 !important; 
+}
+
+body.dark-mode #about-description h1,
+body.dark-mode #about-description h2 {
+    color: #ffffff !important;
+}
+
+body.dark-mode #pickleball-pic {
+    box-shadow: 0 0px 12px rgba(255, 255, 255, 0.945) !important;
+}
+

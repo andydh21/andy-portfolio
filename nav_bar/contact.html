@@ -1,0 +1,84 @@
+<!doctype html>
+<html id = "port-page" lang="en">
+
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Andy Hoang">
+    <meta name="description" content="Andy Hoang's Portfolio page">
+
+    <link rel="stylesheet" href="../styling_page/dividers.css">
+    <link rel="stylesheet" href="../styling_page/nav.css">
+    <link rel="stylesheet" href="../styling_page/contact.css">
+    
+    <title>Contact page</title>
+  </head>
+  
+  <body id = "body">
+
+    <div id="portfolio-header">
+      <h1 id="port-title">Contact Me</h1>
+    
+      <div class="container">
+        <app-header>
+          <nav>
+            <div class="menu-container">
+
+                <a href="../index.html" id="menu-link">
+                    <p>Home</p>
+                </a>
+                
+                <a href="projects.html" id="project-link">
+                    <p>Project</p>
+                </a>
+
+                <a href = "about.html" id = "about-link">
+                    <p>About</p>
+                </a>
+
+                <a href = "resume.html" id = "resume-link">
+                    <p>Resume</p>
+                </a>
+
+                <!-- <a href = "/nav_bar/contact.html = "id ="contact-link"> -->
+                    <p>Contact</p>
+                <!-- </a> -->
+
+                <a href = "https://www.linkedin.com/in/andydh041/" id = "LinkedIn-link">
+                  <p id = "LinkedIn">LinkedIn</p>
+                </a>
+
+            </div>
+          </nav>
+        </app-header>
+      </div>
+    
+      <hr id="first-divider">
+    </div>
+
+    <div id="Message-box">
+
+    </div>
+
+    <div class="contact-container">
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+        <div class="contact-left-title">
+          <h2>Get in touch</h2>
+          <hr>
+        </div>
+        <input type="hidden" name="access_key" value="62e43591-2f1e-4bbb-b554-1077a16f6e7f">
+        <input type="hidden" name="redirect" value="/about.html">
+        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+        <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+        <button type="submit">Submit <img src = "../pictures/arrow_icon.png" alt="arrow image"></button>
+      </form>
+      <div class="contact-right">
+        <img src="../pictures/right_img.png" alt="">
+      </div>
+    </div>
+
+
+  </body>
+  
+</html>

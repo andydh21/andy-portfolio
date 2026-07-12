@@ -1,0 +1,100 @@
+#project-intro {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.project-card {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+.project-name {
+    padding-left: 80px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.project-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding-top: 30px;
+}
+
+.project-video, .project-image {
+    border: 1px solid black;
+    display: block;
+    margin: 0;
+    margin-left: 80px;
+    padding: 0;
+    flex-shrink: 0;
+    object-fit: cover;
+    width: 500px;
+    height: 340px;
+    vertical-align: bottom; 
+}
+
+.project-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 15px;
+}
+
+.project-bio {
+    font-size: 15px;
+    line-height: 1.8;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 1000px;
+}
+
+.tech-section {
+    margin-top: auto;
+    padding-top: 20px;
+}
+
+.pill {
+    background-color: #333;
+    color: #26c9a1;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid #26c9a1;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 0px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+}
+
+.tech-toggle {
+    background-color: #585252;
+    color: rgb(226, 226, 226);
+    border: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tech-toggle:hover, .tech-toggle.active {
+    background-color: #4267B2;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+body.dark-mode .project-video {
+    box-shadow: 0 0px 6px rgba(255, 255, 255, 0.945) !important;
+}
+
+body.dark-mode .project-image {
+    box-shadow: 0 0px 6px rgba(255, 255, 255, 0.945) !important;
+}

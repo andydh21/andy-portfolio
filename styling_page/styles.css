@@ -1,0 +1,262 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#body {
+    padding-bottom: 10%;
+}
+
+#port-page {
+    background-color: white;
+    width: 100%;
+    
+}
+
+#portfolio-header {
+    color: #26c9a1; 
+    text-align: center;
+}
+
+#port-title {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 5%;  
+    margin-right: 5%;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 45px;
+}
+
+#first-divider {
+    border: 1.7px solid black;
+    margin-bottom: 40px;
+}
+
+
+#author-pic-frame {
+  width: 250px;
+  height: 250px; 
+  border-radius: 50%;
+  border: 3px solid black; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); 
+  overflow: hidden; 
+}
+
+#author-pic {
+  width:85%;
+  height: 90%;
+  object-fit: cover;
+  transform: scale(1.4); 
+  object-position: center 60%; 
+}
+
+
+#author-bio {
+    margin-left: auto; 
+    margin-right: auto;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #333333;
+    font-family: 'Calibri', Arial, sans-serif;
+    text-align: center;
+    max-width: 1690px;
+    margin-top: 40px;
+}
+
+#skill-header {
+  text-align: center; 
+  margin-top: 120px;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 50px;
+}
+
+#logo-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 55px; 
+  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#technical-skill {
+  text-align: center; 
+  margin-bottom: 40px; 
+  color: #363535;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+
+#js-logo, #python-logo, #cpp-logo, #html-logo, #css-logo, #MySql-logo, #mongodb-logo, #java-logo, #apachetomcat-logo, #git-logo, #maven-logo, #GitHub-logo, #postman-logo, #figma-logo {
+    display: flex;
+    width: 70px; 
+    height: 70px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid #000000; 
+    box-shadow: 0 6px 12px rgba(0, 0, 1.3); 
+    margin-top: 25px;
+    transition: all 0.2s ease;
+}
+
+#js-logo:hover, #python-logo:hover, #cpp-logo:hover, #html-logo:hover, #css-logo:hover, #MySql-logo:hover, #mongodb-logo:hover, #java-logo:hover, #apachetomcat-logo:hover, #git-logo:hover, #maven-logo:hover, #figma-logo:hover, #postman-logo:hover, #GitHub-logo:hover {
+    transform: translateY(-2px); 
+    border: 5px solid #26c9a1;
+    box-shadow: 0 8px 16px rgba(39, 200, 192, 0.8); 
+    cursor: pointer;
+}
+
+/* --- DARK MODE THEME --- */
+
+body.dark-mode, 
+#port-page.dark-mode {
+    background-color: #121212; 
+    color: #e0e0e0; 
+}
+
+.dark-mode #port-title,
+.dark-mode #skill-header,
+.dark-mode #author-bio {
+    color: #e0e0e0;
+}
+
+.menu-container p.active {
+    color: #26c9a1;
+    font-weight: bold; 
+}
+
+.dark-mode .menu-container p {
+    color: #e0e0e0;
+}
+
+.dark-mode .menu-container p.active {
+    color: #26c9a1;
+}
+
+.dark-mode .menu-container p:hover {
+    color: #26c9a1; 
+    transition: color 0.2s ease; 
+}
+
+.dark-mode #dark-mode-toggle:hover {
+    background-color: #26c9a1;
+    color: #121212;
+    transition: all 0.2s ease;
+}
+
+#dark-mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  background-color: white;
+  border: 2px solid #333;
+  z-index: 1000; 
+}
+
+.dark-mode #js-logo, .dark-mode #python-logo, .dark-mode #cpp-logo, 
+.dark-mode #html-logo, .dark-mode #css-logo, .dark-mode #MySql-logo, 
+.dark-mode #mongodb-logo, .dark-mode #java-logo, .dark-mode #apachetomcat-logo, 
+.dark-mode #git-logo, .dark-mode #postman-logo, .dark-mode #figma-logo, .dark-mode #maven-logo, .dark-mode #GitHub-logo {
+    background-color: white; 
+    border: 2px solid #333;
+}
+
+
+body.dark-mode #author-pic-frame {
+  width: 250px; 
+  height: 250px; 
+  border-radius: 50%;
+  border: 1px solid rgb(255, 255, 255); 
+  box-shadow: 0px 0px 6px rgba(255, 255, 255, 0.945) !important;
+  overflow: hidden; 
+}
+
+
+
+@media (max-width: 768px) {
+    #port-title {
+      font-size: 35px; 
+      margin-left: 5%;  
+      margin-right: 5%;
+    }
+  
+    #author-bio {
+      margin-left: 20px; 
+      margin-right: 20px;
+      font-size: 14px; 
+      line-height: 1.4;
+    }
+  
+    #logo-container {
+      flex-wrap: wrap; 
+      justify-content: center; 
+      gap: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    #js-logo, #python-logo, #cpp-logo, #html-logo, #css-logo, #MySql-logo {
+      width: 50px; 
+      height: 50px; 
+      margin-top: 15px;
+    }
+  
+    #portfolio-header {
+      padding: 20px;
+    }
+  
+    #skill-header {
+      text-align: center; 
+      margin-top: 120px;
+      margin-bottom: 5px; 
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 50px;
+  }
+  }
+  
+  @media (max-width: 480px) {
+    #port-title {
+      font-size: 28px;
+      margin: 20px;
+    }
+  
+    #author-pic {
+      width: 150px; 
+      height: 150px;
+      margin-bottom: 20px;
+    }
+  
+    #author-bio {
+      margin: 10px;
+      font-size: 13px;
+    }
+  
+    #logo-container {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 5px;
+    }
+  
+    #js-logo, #python-logo, #cpp-logo, #html-logo, #css-logo, #MySql-logo {
+      width: 40px; 
+      height: 40px;
+      margin: 5px;
+    }
+  
+    #skill-header {
+      font-size: 30px;
+      margin: 10px;
+    }
+    #dark-mode-toggle {
+      top: 10px;
+      right: 10px;
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+  }

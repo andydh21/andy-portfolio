@@ -1,0 +1,18 @@
+#Education-section {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px 0; 
+}
+
+#resume-pic {
+    height: auto; 
+    width: 100%;
+    max-width: 850px;   
+    border: 2px solid black;
+    box-shadow: 0 6px 12px rgba(0, 0, 1.3); 
+}
+
+body.dark-mode #resume-pic {
+    box-shadow: 0 0px 12px rgba(255, 255, 255, 0.945) !important;
+}
